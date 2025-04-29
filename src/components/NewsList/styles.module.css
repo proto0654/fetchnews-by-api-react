@@ -1,0 +1,46 @@
+.list_item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.list_item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.list_item div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.list_item div h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.list_item div p {
+    font-size: 13px;
+    color: #666;
+}
+.list_news {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (min-width: 768px) {
+
+
+.list_news {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 30px;
+}
+}
